@@ -1,5 +1,5 @@
 function MonChange(starter){
-    setCookie("PokemonImage", starter);w
+    setCookie("PokemonImage", starter);
     
 }
 
