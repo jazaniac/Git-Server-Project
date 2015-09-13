@@ -1,0 +1,37 @@
+#BulbasaurPic {
+    height: 200px;
+    width: 120px;
+    top: 450px;
+    left: 730px;
+    position: absolute;  
+    
+    
+}
+
+#CharmanderPic {
+    height: 200px;
+    width: 120px;
+    top: 450px;
+    left: 850px;
+    position: absolute;  
+    
+}
+
+
+#SquirtlePic {
+    height: 200px;
+    width: 120px;
+    top: 450px;
+    left: 970px;
+    position: absolute;
+    
+}
+
+#PgOneBackground {
+    height: 1000px;
+    width: 1200px;
+    position: relative;
+    
+        
+    
+}
