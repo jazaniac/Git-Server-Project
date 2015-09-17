@@ -9,3 +9,4 @@ CREATE TABLE users (
   done boolean default 'f'    );
 
 INSERT INTO user (name) VALUES();
+

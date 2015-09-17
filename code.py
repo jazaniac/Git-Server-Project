@@ -5,7 +5,8 @@ db = web.database(dbn='sqlite', db='users')
 
 urls = (
   '/', 'Layout',
-    '/LayoutP2', 'LayoutP2'
+    '/LayoutP2', 'LayoutP2',
+    '/LoginGood', 'LoginGood'
 )
 
 class Layout:
@@ -20,7 +21,11 @@ class LayoutP2:
     def POST(self):
         form = web.input()
         n = db.insert('user', name=form.name, password = form.password)
-        raise web.seeother('templates/LoginGood.html')
+        return web.seeother('LoginGood')
+        
+class LoginGood:
+    def GET(self):
+        return render.LoginGood()
         
     
         
