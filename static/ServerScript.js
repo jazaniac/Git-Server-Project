@@ -1,5 +1,6 @@
-function MonChange(starter){
+function monChange(starter){
     setCookie("PokemonImage", starter);
+    
 }
 
 function getURL(site) {
@@ -17,11 +18,11 @@ function getCookie(name) {
 }
         
 function getPokemonImgCookie() {
-    var myImg1Cookie = document.cookie.replace(/(?:(?:^|.*;\s*)PokemonImage\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-    return myImg1Cookie;
+    var PokemonImage = document.cookie.replace(/(?:(?:^|.*;\s*)PokemonImage\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    return PokemonImage;
 }
 
 function monSet() {
-    document.getElementById("TopLeftStarter").src = getPokemonImgCookie("PokemonImage");
+ document.getElementById("starter").src = getPokemonImgCookie();   
     
 }
